@@ -41,6 +41,15 @@ const welcomeMessage = () => {
     // The event listener that removes goals when clicked is not related to this issue.
     // Focus on preventing duplicates for now.
    
+// Check for duplicates
+for (let i = 0; i < existingGoals.length; i++) {
+    if (existingGoals[i].textContent === goalInput) {
+        alert('This goal already exists. Please add a different goal.'); // Alert if duplicate is found
+        return; // Exit function to prevent adding the duplicate
+    }
+}
+
+
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
