@@ -49,7 +49,7 @@ for (let i = 0; i < existingGoals.length; i++) {
     }
 }
 
-
+ // Proceed with adding the new goal if no duplicate is found
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
