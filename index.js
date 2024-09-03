@@ -91,4 +91,4 @@ for (let i = 0; i < existingGoals.length; i++) {
  
  const submitMealPlan = (event) => {
     event.preventDefault();
- 
+ }
